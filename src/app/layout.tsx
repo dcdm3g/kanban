@@ -6,8 +6,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: '...',
-  description: '...',
+  title: 'Kanban',
+  description:
+    'Streamline task management with our Kanban board app for a smooth, efficient experience.',
 }
 
 interface RootLayoutProps {
