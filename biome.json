@@ -9,8 +9,15 @@
 	"linter": {
 		"rules": {
 			"recommended": true,
+			"style": {
+				"useTemplate": "off"
+			},
 			"nursery": {
-				"useSortedClasses": "error"
+				"useSortedClasses": {
+					"level": "error",
+					"fix": "safe",
+					"options": { "functions": ["tv"] }
+				}
 			}
 		}
 	},
