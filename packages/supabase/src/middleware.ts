@@ -28,10 +28,7 @@ export async function refreshSession(request: NextRequest) {
 
 	const {
 		data: { user },
-		error,
 	} = await supabase.auth.getUser()
-
-	console.log(user, error)
 
 	if (
 		!user &&
