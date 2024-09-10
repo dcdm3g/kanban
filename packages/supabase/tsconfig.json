@@ -1,0 +1,10 @@
+{
+	"extends": "@kanban/tsconfig/base.json",
+	"compilerOptions": {
+		"outDir": "build",
+		"declaration": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	}
+}

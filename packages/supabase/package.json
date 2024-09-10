@@ -1,0 +1,28 @@
+{
+	"name": "@kanban/supabase",
+	"version": "0.1.0",
+	"private": true,
+	"exports": {
+		"./client": "./build/client.js",
+		"./server": "./build/server.js",
+		"./middleware": "./build/middleware.js",
+		"./sdk": "./build/sdk.js"
+	},
+	"scripts": {
+		"dev": "tsc --watch",
+		"build": "tsc",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@supabase/ssr": "^0.5.1",
+		"@supabase/supabase-js": "^2.45.3",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@kanban/tsconfig": "workspace:*",
+		"typescript": "^5"
+	},
+	"peerDependencies": {
+		"next": "14.2.7"
+	}
+}

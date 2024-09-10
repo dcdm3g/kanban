@@ -1,0 +1,44 @@
+{
+	"name": "@kanban/www",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@hookform/resolvers": "^3.9.0",
+		"@kanban/supabase": "workspace:*",
+		"@prisma/client": "^5.19.1",
+		"@radix-ui/react-alert-dialog": "^1.1.1",
+		"@radix-ui/react-checkbox": "^1.1.1",
+		"@radix-ui/react-dialog": "^1.1.1",
+		"@radix-ui/react-dropdown-menu": "^2.1.1",
+		"@radix-ui/react-label": "^2.1.0",
+		"@radix-ui/react-popover": "^1.1.1",
+		"@radix-ui/react-select": "^2.1.1",
+		"@radix-ui/react-slot": "^1.1.0",
+		"@radix-ui/react-switch": "^1.1.0",
+		"next": "14.2.7",
+		"react": "^18",
+		"react-dom": "^18",
+		"react-hook-form": "^7.53.0",
+		"sharp": "^0.33.5",
+		"tailwind-variants": "^0.2.1",
+		"zod": "^3.23.8",
+		"zsa": "^0.6.0"
+	},
+	"devDependencies": {
+		"@kanban/tsconfig": "workspace:*",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"postcss": "^8",
+		"prisma": "^5.19.1",
+		"tailwindcss": "^3.4.1",
+		"tailwindcss-animate": "^1.0.7",
+		"typescript": "^5"
+	}
+}

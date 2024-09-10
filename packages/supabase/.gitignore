@@ -1,0 +1,12 @@
+# dependencies
+node_modules
+
+# build
+build
+
+# supabase
+supabase/.branches
+supabase/.temp
+
+# local env files
+.env.local
