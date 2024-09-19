@@ -9,7 +9,7 @@
 		"./sdk": "./build/sdk.js"
 	},
 	"scripts": {
-		"dev": "tsc --watch",
+		"dev": "supabase start && tsc --watch",
 		"build": "tsc",
 		"typecheck": "tsc --noEmit"
 	},
@@ -20,6 +20,7 @@
 	},
 	"devDependencies": {
 		"@kanban/tsconfig": "workspace:*",
+		"supabase": "^1.192.5",
 		"typescript": "^5"
 	},
 	"peerDependencies": {
