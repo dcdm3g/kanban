@@ -34,7 +34,7 @@ enable_confirmations = false
 max_frequency = "1s"
 
 [auth.email.template.magic_link]
-subject = "Login to Kanban"
+subject = "Your Magic Link"
 content_path = "supabase/templates/magic-link.html"
 
 [auth.external.google]
