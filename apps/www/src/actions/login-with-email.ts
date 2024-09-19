@@ -12,8 +12,8 @@ export const loginWithEmail = createServerAction()
 		const { error } = await supabase.auth.signInWithOtp({
 			email,
 			options: {
-				emailRedirectTo: process.env.VERCEL_URL
-					? 'https://' + process.env.VERCEL_URL
+				emailRedirectTo: process.env.NEXT_PUBLIC_VERCEL_URL
+					? 'https://' + process.env.NEXT_PUBLIC_VERCEL_URL
 					: 'http://localhost:3000',
 				shouldCreateUser: false,
 			},
