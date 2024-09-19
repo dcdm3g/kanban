@@ -9,6 +9,9 @@ export const loginWithEmail = createServerAction()
 	.handler(async ({ input: { email } }) => {
 		const supabase = createClient()
 
+		console.log(process.env.NEXT_PUBLIC_VERCEL_URL)
+		console.log(process.env.VERCEL_URL)
+
 		const { error } = await supabase.auth.signInWithOtp({
 			email,
 			options: {
