@@ -2,6 +2,7 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
 	content: ['src/app/**/*.tsx', 'src/components/**/*.tsx'],
+	darkMode: 'class',
 	theme: {
 		colors: {
 			'indigo-echo': 'rgb(99, 95, 199)',
@@ -16,6 +17,7 @@ const config: Config = {
 			'pure-snow': 'rgb(255, 255, 255)',
 			'crimson-blaze': 'rgb(234, 85, 85)',
 			'blush-pink': 'rgb(255, 152, 152)',
+			'verdant-spark': 'rgb(72, 187, 120)',
 			'pure-ebony': 'rgb(0, 0, 0)',
 		},
 		fontSize: {
@@ -26,6 +28,7 @@ const config: Config = {
 			'heading-xl': ['1.5rem', '1.875rem'],
 		},
 		boxShadow: {
+			sm: '0 4px 6px 0 rgb(54, 78, 126 / 0.1015)',
 			DEFAULT: '0 10px 20px 0 rgb(54 78 126 / 0.25)',
 		},
 		letterSpacing: {

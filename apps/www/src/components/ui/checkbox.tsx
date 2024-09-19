@@ -16,7 +16,7 @@ export function Checkbox({
 			{...rest}
 		>
 			<RadixCheckbox.Indicator className="flex items-center justify-center">
-				<Check className="text-pure-snow" />
+				<Check className="h-2 w-2.5 text-pure-snow" />
 			</RadixCheckbox.Indicator>
 		</RadixCheckbox.Root>
 	)

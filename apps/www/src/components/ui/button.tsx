@@ -13,6 +13,8 @@ export const button = tv({
 			secondary:
 				'bg-indigo-echo/10 text-indigo-echo hover:bg-indigo-echo/25 dark:bg-pure-snow dark:hover:bg-pure-snow',
 			destructive: 'bg-crimson-blaze text-pure-snow hover:bg-blush-pink',
+			outline:
+				'border border-steel-mist/25 bg-pure-snow text-midnight-abyss hover:border-steel-mist/50 hover:bg-pale-ice dark:bg-stormy-slate dark:text-pure-snow dark:hover:bg-twilight-gray',
 		},
 	},
 	defaultVariants: {

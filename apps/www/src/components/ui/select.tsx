@@ -22,7 +22,7 @@ export function SelectTrigger({
 			{children}
 
 			<RadixSelect.Icon asChild>
-				<ChevronDown className="text-indigo-echo" />
+				<ChevronDown className="h-[0.4375rem] w-2.5 text-indigo-echo" />
 			</RadixSelect.Icon>
 		</RadixSelect.Trigger>
 	)

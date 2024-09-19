@@ -1,4 +1,6 @@
+import { Toaster } from '@/components/ui/sonner'
 import type { Metadata } from 'next'
+import { ThemeProvider } from 'next-themes'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import type { ReactNode } from 'react'
 import '@/lib/tailwind-variants'
@@ -18,8 +20,18 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
-		<html lang="en">
-			<body className={plus_jakarta_sans.className}>{children}</body>
+		<html lang="en" suppressHydrationWarning>
+			<body className={plus_jakarta_sans.className}>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange
+				>
+					{children}
+					<Toaster />
+				</ThemeProvider>
+			</body>
 		</html>
 	)
 }

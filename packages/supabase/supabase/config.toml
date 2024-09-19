@@ -33,6 +33,10 @@ double_confirm_changes = true
 enable_confirmations = false
 max_frequency = "1s"
 
+[auth.email.template.magic_link]
+subject = "Login to Kanban"
+content_path = "supabase/templates/magic-link.html"
+
 [auth.external.google]
 enabled = true
 client_id = "env(GOOGLE_CLIENT_ID)"
