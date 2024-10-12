@@ -37,17 +37,17 @@ export type Database = {
 			boards: {
 				Row: {
 					id: string
-					title: string
+					name: string
 					user_id: string | null
 				}
 				Insert: {
 					id?: string
-					title: string
+					name: string
 					user_id?: string | null
 				}
 				Update: {
 					id?: string
-					title?: string
+					name?: string
 					user_id?: string | null
 				}
 				Relationships: [
@@ -64,17 +64,17 @@ export type Database = {
 				Row: {
 					board_id: string | null
 					id: string
-					title: string
+					name: string
 				}
 				Insert: {
 					board_id?: string | null
 					id?: string
-					title: string
+					name: string
 				}
 				Update: {
 					board_id?: string | null
 					id?: string
-					title?: string
+					name?: string
 				}
 				Relationships: [
 					{
@@ -152,7 +152,28 @@ export type Database = {
 			[_ in never]: never
 		}
 		Functions: {
-			[_ in never]: never
+			add_board: {
+				Args: {
+					name: string
+					column_names: string[]
+				}
+				Returns: Json
+			}
+			add_task: {
+				Args: {
+					title: string
+					subtasks: string[]
+					column_id: string
+					description?: string
+				}
+				Returns: string
+			}
+			toggle_subtask: {
+				Args: {
+					id: string
+				}
+				Returns: undefined
+			}
 		}
 		Enums: {
 			[_ in never]: never

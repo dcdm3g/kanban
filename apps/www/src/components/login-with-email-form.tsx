@@ -14,7 +14,7 @@ export function LoginWithEmailForm() {
 
 	const { isPending, execute } = useServerAction(loginWithEmail, {
 		onSuccess: () => toast.success('We sent a magic link to your email.'),
-		onError: ({ err }) => toast.error(err.message),
+		onError: () => toast.error('Something went wrong. Please try again later.'),
 	})
 
 	const parsedEmail = z.string().email().safeParse(email)
